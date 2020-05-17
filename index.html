@@ -1,51 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>MY PORTFOLIO</title>
-    
-     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    
-    
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
-      <a class="navbar-brand" href="index.html">PORTFOLIO</a>
-    
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">about</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="experience.html">skillset</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">contact</a>
-          </li>
-
-        </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> MY PORTFOLIO </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">My Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Skill Set</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <div class="jumbotron text-centre">
-        <h1 class="bdisplay-4">Welcome!</h1>
-        <h4>welcome to my portfolio website.</h4>
+    <div id="slides" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="128578729-abstract-glowing-circuit-coding-background-programming-and-technology-concept-3d-rendering.jpg" />
+        </div>
+        <div class="carousel-item">
+          <img src="6793522-free-office-wallpaper.jpg" />
+        </div>
+        <div class="carousel-item">
+          <img src="rawpixel-com-559744-unsplash_960x0.jpg" />
+        </div>
+      </div>
+      <br />
     </div>
-    <div class="button">
-      <a href="about.html"><button type="button" class="btn btn-outline-primary">click</button></a>
+    <div class="container-fluid padding info">
+      <div class="row padding">
+        <div class="col-lg-6">
+          <h2 class="row text-center padding">
+            NAME:
+            <h4 class="nm">Sayan samanta</h4>
+          </h2>
+          <br />
+          <br />
+
+          <h2 class="row text-center">QUALIFICATIONS:</h2>
+          <ul>
+            <li><h4>undergrad from BITS Pilani Goa</h4></li>
+            <li><h4>thats pretty much it hehe..</h4></li>
+          </ul>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img class="myim" src="7316f550de9ca0045e3d8d98a5bb5e44.png" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid padding abtme">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">About Me</h1>
+        </div>
+        <hr class="lcolor" />
+      </div>
+    </div>
+ 
+    <div class="container-fluid padding abtme">
+      <div class="row padding"> 
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="69695958-paints-and-brushes.jpg" />
+            <div class="card-body">
+              <h4 class="card-title">Painting</h4>
+              <p class="card-text row text-center">
+                Painting can be very relaxing and calming. I enjoy painting because it is one of the few things I am good at and can be proud about. Paintings, like many forms of art, can express ideas and feelings. It can make you feel calm and relaxed.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="download (1).jpg" />
+            <div class="card-body">
+              <h4 class="card-title">Cricket</h4>
+              <p class="card-text row text-center">
+                I love cricket because it is purest form of love. The joy of watching your team do well, the uncertainties it brings and the sheer happiness. Sometimes you lose the unloseables and sometimes you manage to pull off a miracle. The game is such a leveler.
+              </p>
+            </div>
+          </div>
+        </div>
+       
+        
+
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="Marvel-Movies-in-Order-of-Story-Featured-StudioBinder-min.jpg" />
+            <div class="card-body">
+              <h4 class="card-title">Movies</h4>
+              <p class="card-text row text-center">
+                For me, I love the feeling I can get after watching a movie. There is so much emotion that can be packed into a film, and I am rather young so it is just neat to see all these stories I have never had the experience to see. Movies are just a magical experience for me where I can escape to somewhere.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+    <div class="container-fluid">
+      <div class="row padding"> 
+        <div class="col-12">
+          <div class="card">
+            <img class="card-img-top" src="food-concept-meals-snacks-dining-table-family-royalty-free-image-963390242-1565986730.jpg" />
+            <div class="card-body row text-center">
+              <h4 class="card-title">Foodie</h4>
+              <p class="card-text">
+                I love food and love eating it, who doesn’t? When I am enjoying a meal I am thinking about the next one. I don’t know why but one of my favorite things to do is eating.  I don’t know how to explain it but my world, revolves around food.
+              </p>
+            </div>
+          </div>
+        </div>
+       </div>
+    </div>
+    <div class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">Skillset</h1>
+        </div>
+        <hr />
+      </div>
     </div>
     
+    <div class="container-fluid padding">
+      <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <img
+            class="icons"
+            src="icons8-c-programming-48 (1).png"
+          />
+          <h3>C</h3>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <i class="fas fa-bold"></i>
+          <h3>BOOTSTRAP</h3>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <i class="fas fa-code"></i>
+          <h3>HTML5</h3>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <i class="fab fa-css3"></i>
+          <h3>CSS3</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-8 col-md-4">
+          <img
+            class="icons"
+            src="https://img.icons8.com/color/50/000000/python.png"
+          />
+          <h3>Python</h3>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <img
+            class="icons"
+            src="https://img.icons8.com/color/50/000000/autodesk-autocad.png"
+          />
+          <h3>AutoCAD</h3>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <img
+            class="icons"
+            src="https://img.icons8.com/color/50/000000/java-coffee-cup-logo.png"
+          />
+          <h3>JAVA</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid padding">
+      <div class="row text-center padding">
+        <div class="col-12">
+          <h2>Contact Details</h2>
+          <br />
+        </div>
+      </div>
+      <div class="row text-center padding">
+        <div class="col-12">
+          <p>Mobile:<a href="index.html"> 91-85xxxxxxxx</a></p>
+          <p>Email:<a href="index.html">sayansamanta@gmail.com</a></p>
+          <p>Address:</p>
+          <p>xxx-xxxx xxxxx xxxxxxxx</p>
+          <p>xxxxxxx, xxxxx-xxx</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container-fluid padding">
+        <div class="row text-center">
+          <div class="col-12">
+            <h5>&copy; indominousrexx.github.io</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
