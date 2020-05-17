@@ -1,0 +1,64 @@
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+  body {
+    background-color: rgb(51, 46, 94);
+    backface-visibility: visible;
+    height: 100%;
+    width: 100%;
+  }
+  .jumbotron {
+    padding: 1rem;
+    border-radius: 1; 
+  }
+  .navbar {
+    padding: 0.8rem;
+  }
+  .navbar-nav li {
+    padding-right: 20px;
+  }
+  .btn-outline-secondary {
+    background-color: #7fbfc7;
+    border: 1px solid #5ce2fa;
+  }
+  .navbar-brand {
+    font-size: 125%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px #000;
+  }
+  .bdisplay-4 h1 {
+    font-weight: 500;
+    font-size: 200%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px rgb(99, 98, 89);
+  }
+  .card-body {
+    border: rgb(2, 2, 104);
+    background-color: rgb(78, 207, 240);
+    font-size: 135%;
+    font-weight: 400;
+  }
+  .card-title {
+    font-size: 200%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px rgb(3, 80, 10);
+  }
+  .jumbotron-main {
+    background-color: #949eaa;
+    font-style: oblique;
+    font-weight: 400;
+    padding: 1rem;
+    border-radius: 0; 
+  }
+  .container-fluid {
+    font-weight: 600;
+    font-size: 125%;
+  }
+  .adisplay-4 {
+    font-weight: 500;
+  }
+  .table {
+    background-color: rgb(68, 111, 126);
+  }
+  #yo {
+    font-size: 300%;
+    text-transform: uppercase;
+  }
