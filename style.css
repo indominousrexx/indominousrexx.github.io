@@ -5,7 +5,7 @@
 html, body {
   overflow-x: hidden;
   color:#494d96;
-  background: linear-gradient(to left, #e4b0ce, #ebe6e8);
+  background: linear-gradient(to left, #dfbadd, #f5f1f5);
   height: 100%;
   width: 100%;
   font-family: "Poppins", sans-serif;
@@ -60,7 +60,7 @@ html, body {
 }
 .carousal-caption h3 {
   font-size: 2rem;
-  text-shadow: .1rem .1rem .2rem rgb(100, 121, 128);
+  text-shadow: .1rem .1rem .4rem rgb(14, 79, 100);
   padding-bottom: .5rem;
 
 }
@@ -85,14 +85,16 @@ html, body {
 }
 
 section {
-  display: flexbox;
+  display: inline-flexbox;
   padding-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;;
-  height: 100vh;
+  height: 70vh;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #b99fb4, #0e1557);
+  background: linear-gradient(to bottom, #e4c7de, #040b58);
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .hero {
@@ -180,7 +182,7 @@ footer {
   color: #d5d5d5;
   padding: 2rem 0 2rem;
 }
-.offset:before {
+.offset::before {
   height: 3.6rem;
    content: "";
    margin-top: -3.6rem;
@@ -224,11 +226,11 @@ h3.heading {
   background-color: rgb(0, 0, 0);
 }
 #contact {
-  background: linear-gradient(to bottom, rgb(131, 128, 131), rgb(0, 0, 0));
+  background: linear-gradient(to bottom, rgb(235, 189, 219), rgb(2, 55, 116));
   scroll-padding-top: 3.2rem;
 }
 #contact a {
-  color: rgb(8, 205, 240);
+  color: rgb(0, 247, 255);
 }
 #contact svg.svg-inline--fa {
   font-size: 1.6rem;
@@ -245,17 +247,17 @@ h3.heading {
 }
 .card {
   outline-style: groove;
-  outline-color: rgb(95, 3, 3);
+  outline-color: rgb(78, 1, 1);
 }
 #mainhead1 {
   padding-left: 4rem;
 }
 
 .hero h1 {
-  margin-left: 18%;
+  margin-left: 17%;
   margin-top: -3rem;
-  font-size: 80px;
-  transform: translate(-20%, -70%);
+  font-size: 60px;
+  transform: translate(-20%, -60%);
   color: white;
   z-index: 4;
 
@@ -266,4 +268,9 @@ h3.heading {
 #contact h2 {
   color: rgb(0, 0, 0);
 }
-
+#slides h1 {
+  color: cyan;
+}
+#slides h3 {
+  color: rgb(2, 156, 156);
+}
