@@ -1,89 +1,78 @@
-const X_CLASS = 'x'
-const CIRCLE_CLASS = 'circle'
-const WINNING_COMBINATIONS = [
-  [0, 1, 2],
-  [3, 4, 5],
-  [6, 7, 8],
-  [0, 3, 6],
-  [1, 4, 7],
-  [2, 5, 8],
-  [0, 4, 8],
-  [2, 4, 6]
-]
-const cellElements = document.querySelectorAll('[data-cell]')
-const board = document.getElementById('board')
-const winningMessageElement = document.getElementById('winningMessage')
-const restartButton = document.getElementById('restartButton')
-const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
-let circleTurn
 
-startGame()
-
-restartButton.addEventListener('click', startGame)
-
-function startGame() {
-  circleTurn = false
-  cellElements.forEach(cell => {
-    cell.classList.remove(X_CLASS)
-    cell.classList.remove(CIRCLE_CLASS)
-    cell.removeEventListener('click', handleClick)
-    cell.addEventListener('click', handleClick, { once: true })
-  })
-  setBoardHoverClass()
-  winningMessageElement.classList.remove('show')
-}
-
-function handleClick(e) {
-  const cell = e.target
-  const currentClass = circleTurn ? CIRCLE_CLASS : X_CLASS
-  placeMark(cell, currentClass)
-  if (checkWin(currentClass)) {
-    endGame(false)
-  } else if (isDraw()) {
-    endGame(true)
+showNotes();
+let addBtn = document.getElementById("addBtn");
+addBtn.addEventListener("click", function(e) {
+ let addTxt = document.getElementById("addTxt");
+ let addTxt2 = document.getElementById("addTxt2");
+  let notes = localStorage.getItem("notes");
+  if (notes == null) {
+    notesObj = [];
   } else {
-    swapTurns()
-    setBoardHoverClass()
+    notesObj = JSON.parse(notes);
+  }
+  
+  notesObj.push(addTxt2.value + '<hr id="hrj" />' + addTxt.value);
+  localStorage.setItem("notes", JSON.stringify(notesObj)); 
+  addTxt.value = "";
+  addTxt2.value = "";
+  showNotes();
+});
+
+function showNotes() {
+  let notes = localStorage.getItem("notes");
+  if (notes == null) {
+    notesObj = [];
+  } else {
+    notesObj = JSON.parse(notes);
+  }
+  let html = "";
+  notesObj.forEach(function(element, index) {
+    html += `
+            <div class="noteCard my-3 mx-4 card" id="notecard" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Note ${index + 1}</h5>
+                        <div class="editNote" contenteditable>
+                           <p class="card-text"> ${element}</p>
+                        </div>   
+                        <button id="${index}"onclick="deleteNote(this.id)" class="btn btn-outline-dark my-2 my-sm-0">Delete Note</button>
+                    </div>
+                </div>`;
+  });
+  let notesElm = document.getElementById("notes");
+  if (notesObj.length != 0) {
+    notesElm.innerHTML = html;
+  } else {
+    notesElm.innerHTML = `<p id="p">Nothing to show! Use "Add a Note" section above to add notes.</p>`;
   }
 }
 
-function endGame(draw) {
-  if (draw) {
-    winningMessageTextElement.innerText = 'Draw!'
+function deleteNote(index) {
+
+  let notes = localStorage.getItem("notes");
+  if (notes == null) {
+    notesObj = [];
   } else {
-    winningMessageTextElement.innerText = `${circleTurn ? "O's" : "X's"} Wins!`
+    notesObj = JSON.parse(notes);
   }
-  winningMessageElement.classList.add('show')
+
+  notesObj.splice(index, 1);
+  localStorage.setItem("notes", JSON.stringify(notesObj));
+  showNotes();
 }
 
-function isDraw() {
-  return [...cellElements].every(cell => {
-    return cell.classList.contains(X_CLASS) || cell.classList.contains(CIRCLE_CLASS)
-  })
-}
+let search = document.getElementById('searchTxt');
+search.addEventListener("input", function(){
 
-function placeMark(cell, currentClass) {
-  cell.classList.add(currentClass)
-}
-
-function swapTurns() {
-  circleTurn = !circleTurn
-}
-
-function setBoardHoverClass() {
-  board.classList.remove(X_CLASS)
-  board.classList.remove(CIRCLE_CLASS)
-  if (circleTurn) {
-    board.classList.add(CIRCLE_CLASS)
-  } else {
-    board.classList.add(X_CLASS)
-  }
-}
-
-function checkWin(currentClass) {
-  return WINNING_COMBINATIONS.some(combination => {
-    return combination.every(index => {
-      return cellElements[index].classList.contains(currentClass)
+    let inputVal = search.value.toLowerCase();
+  
+    let noteCards = document.getElementsByClassName('noteCard');
+    Array.from(noteCards).forEach(function(element){
+        let cardTxt = element.getElementsByTagName("p")[0].innerText;
+        if(cardTxt.includes(inputVal)){
+            element.style.display = "block";
+        }
+        else{
+            element.style.display = "none";
+        }
     })
-  })
-}
+})
