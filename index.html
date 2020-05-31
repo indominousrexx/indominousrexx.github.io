@@ -1,31 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link href="style.css" rel="stylesheet" />
 
-  <title>Weather App</title>
-  
-</head>
-<body>
-  <div id="searchContainer" class="col-12">
-    <input class="searchControl" type="text" placeholder="City Name or zipcode" id="searchInput">
-    <button clacc="searchControl" id="a">Search</button>
-  </div>
-<div id="weatherContainer">
-  <div id="weatherDescription">
-    <h1 id="cityHeader"></h1>
-    <div id="weatherMain">
-      <div id="temperature"></div>
-      <div id="weatherDescriptionHeader"></div>
-      <div><img id="documentIconImage"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+     
+  </head>
+  <body data-spy="scroll" data-target="#navbarResponsive">
+    <div id="home">
+
+   
+   
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home"> MY PORTFOLIO </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#myinfo">My Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutme">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skillset">Skill Set</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="slides" class="carousel slide" data-ride="carousel" data-interval="6000">
+      <ol class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active" id="mainimg" style="background-image: url(a9122539bc17f0b49c3664cf0cf5e43a.jpg);">
+          
+          
+          <div class="carousal-caption text-center">
+            <h1>hello</h1>
+            <h3>welcome to my portfolio</h3>
+            <a class="btn btn-outline-light btn-lg" href="#myinfo">continue</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="6793522-free-office-wallpaper.jpg" />
+        </div>
+        <div class="carousel-item">
+          <img src="rawpixel-com-559744-unsplash_960x0.jpg" />
+        </div>
+      </div>
+      <br />
     </div>
-    <hr>
-    <div id="windSpeed" class="bottomDetails"></div>
-    <div id="humidity" class="bottomDetails"></div>
-  </div>
-</div>
+    </div>
+    <div id="myinfo" class="offset">
+    <div class="container-fluid padding abtme">
+      <div class="row welcome text-center">
+        <div class="col-12">
+           <h1>My Info</h1>
+        </div>
+        <hr class="lcolor" />
+      </div>
+    
+    <div class="container-fluid padding info">
+      <div class="row padding">
+        
+        <div class="col-lg-6">
+          <h2 class="row text-center padding">
+            NAME:
+            <h4 class="nm">Sayan Samanta</h4>
+          </h2>
+          <br />
+          <br />
 
-<script src="script.js"></script>
-</body>
+          <h2 class="row text-center">QUALIFICATIONS:</h2>
+          <ul>
+            <li><h4>undergrad from BITS Pilani Goa</h4></li>
+            <li><h4>thats pretty much it hehe..</h4></li>
+          </ul>
+        </div>
+        <div class="col-lg-6" id="x">
+          <img class="myim" src="x.jpg" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="aboutme" class="offset">
+    <div class="container-fluid padding abtme">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <div class="wow">
+            <h1>About Me</h1>
+          </div>
+        </div>
+        <hr class="lcolor" />
+      </div>
+    </div>
+   
+     <section>
+      
+        <div class="hero">
+          <img src="bits.jpg" alt="">
+          <a href="https://www.bits-pilani.ac.in/"><h1 class="headline">BITS Goa</h1></a>
+          <div class="lol text-center">Hi, I am a Web Developer, currently pursuing my engineering in Birla Institute of Technology and Sciences Pilani - K.K. Birla Goa Campus. I love to code and to solve challenging problems. I also like to design websites. I am always keen to learn something new and work with new people. Contact me if you'd like to work together on your next project.</div>
+        </div> </div>
+        </div>
+      
+     </section>
+
+    <div class="slider"></div>
+
+
+    <div class="container-fluid padding abtme">
+      <div class="row padding"> 
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="69695958-paints-and-brushes.jpg" />
+            <div class="card-body">
+              <h4 class="card-title">Painting</h4>
+              <p class="card-text row text-center">
+                Painting can be very relaxing and calming. I enjoy painting because it is one of the few things I am good at and can be proud about. Paintings, like many forms of art, can express ideas and feelings. It can make you feel calm and relaxed.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="download (1).jpg" />
+            <div class="card-body">
+              <h4 class="card-title">Cricket</h4>
+              <p class="card-text row text-center">
+                I love cricket because it is purest form of love. The joy of watching your team do well, the uncertainties it brings and the sheer happiness. Sometimes you lose the unloseables and sometimes you manage to pull off a miracle. The game is such a leveler.
+              </p>
+            </div>
+          </div>
+        </div>
+       
+        
+
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="Marvel-Movies-in-Order-of-Story-Featured-StudioBinder-min.jpg" />
+            <div class="card-body">
+              <h4 class="card-title">Movies</h4>
+              <p class="card-text row text-center">
+                For me, I love the feeling I can get after watching a movie. There is so much emotion that can be packed into a film, and I am rather young so it is just neat to see all these stories I have never had the experience to see. Movies are just a magical experience for me where I can escape to somewhere.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+    <div class="container-fluid">
+      <div class="row padding"> 
+        <div class="col-12">
+          <div class="card">
+            <img class="card-img-top" src="food-concept-meals-snacks-dining-table-family-royalty-free-image-963390242-1565986730.jpg" />
+            <div class="card-body row text-center">
+              <h4 class="card-title">Foodie</h4>
+              <p class="card-text">
+                I love food and love eating it, who doesn’t? When I am enjoying a meal I am thinking about the next one. I don’t know why but one of my favorite things to do is eating.  I don’t know how to explain it but my world, revolves around food.
+              </p>
+            </div>
+          </div>
+        </div>
+       </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="projects">
+      <div class="jumbotron container-fluid">
+        <h1 class="heading display-4 text-center">Projects</h1>
+        <hr class="lcolor" />
+        <div class="heading-underline">
+        </div>
+        <div class="row no-padding">
+          <div class="col-sm-4">
+            <div class="projects">
+              <a href="https:/indominousrexx.github.io" target="_blank">
+                <img src="wpdevshed-portfolio-wjoq3m (1).jpg">
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="projects">
+              <a href="https://indominousrexx.github.io/timer.github.io/" target="_blank">
+                <img src="tim (3).jpg">
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="projects">
+              <a href="1_t7BQt0ULjU1XNUsBBl7Tdg.png" target="_blank">
+                <img src="1_t7BQt0ULjU1XNUsBBl7Tdg.png">
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="projects">
+              <a href="1_t7BQt0ULjU1XNUsBBl7Tdg.png" target="_blank">
+                <img src="1_t7BQt0ULjU1XNUsBBl7Tdg.png">
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="projects">
+              <a href="1_t7BQt0ULjU1XNUsBBl7Tdg.png" target="_blank">
+                <img src="1_t7BQt0ULjU1XNUsBBl7Tdg.png">
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="projects">
+              <a href="1_t7BQt0ULjU1XNUsBBl7Tdg.png" target="_blank">
+                <img src="1_t7BQt0ULjU1XNUsBBl7Tdg.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <div id="skillset" class="offset">
+    <div class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">Skillset</h1>
+          <hr class="lcolor" />
+        </div>
+        <hr />
+      </div>
+    </div>
+  </div>
+    
+    <div class="container-fluid padding">
+      <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <img
+            class="icons"
+            src="icons8-c-programming-48 (1).png"
+          />
+          <h3>C</h3>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <i class="fas fa-bold"></i>
+          <h3>BOOTSTRAP4</h3>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <i class="fas fa-code"></i>
+          <h3>HTML5</h3>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <i class="fab fa-css3"></i>
+          <h3>CSS3</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid padding" id="ss">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-8 col-md-4">
+          <img
+            class="icons"
+            src="https://img.icons8.com/color/50/000000/python.png"
+          />
+          <h3>Python</h3>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <img
+            class="icons"
+            src="https://img.icons8.com/color/50/000000/autodesk-autocad.png"
+          />
+          <h3>AutoCAD</h3>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <img
+            class="icons"
+            src="https://img.icons8.com/color/50/000000/java-coffee-cup-logo.png"
+          />
+          <h3>JAVA</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contact" class="offset">
+    <div class="container-fluid padding">
+      <div class="row text-center padding">
+        <div class="col-12">
+          <h2>Contact Details</h2>
+          <hr class="lcolor" />
+          <br />
+        </div>
+      </div>
+      <div class="row text-center padding">
+        <div class="col-12">
+          <p>Mobile:<a href="index.html">91-85xxxxxxxx</a></p>
+          <p>Email:<a href="index.html">sayansamanta@gmail.com</a></p>
+          <p>Address:</p>
+          <p>xxx-xxxx xxxxx xxxxxxxx</p>
+          <p>xxxxxxx, xxxxx-xxx</p>
+          <a href="https://www.facebook.com/profile.php?id=100009428311948" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/graphite_maniac" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/graphite_maniac" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <footer class="end">
+      <div class="container-fluid padding">
+        <div class="row text-center">
+          <div class="col-12">
+            <h5>&copy; 2020 indominousrexx.github.io</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
