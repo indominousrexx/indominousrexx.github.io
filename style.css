@@ -139,6 +139,15 @@ section {
     font-size: 4em;
     padding: 2rem;
   }
+    .myim {
+      height: 460px;
+      padding: 1rem 1rem 1rem 1rem;
+      border-radius: 1rem;
+      align-content: center;
+     outline-style: dashed;
+     outline-offset: -0.4rem;
+     outline-color: black;
+  }
 }
 
 @media (max-width: 768px) {
@@ -147,19 +156,25 @@ section {
     padding: 1.2rem;
   }
   .myim {
-    height: 400px;
+    height: 390px;
     padding: 1rem 1rem 1rem 1rem;
-    
+    border-radius: 1rem;
     align-content: center;
    outline-style: dashed;
    outline-color: black;
   }
+  
 }
 
 @media (max-width: 576px) {
   .social a {
     font-size: 2em;
     padding: 0.7rem;
+  }
+    .myim {
+      height: 370px;
+      padding: 1rem 1rem 1rem 1rem;
+      align-content: center;
   }
   
 }
@@ -247,7 +262,7 @@ h3.heading {
   padding-bottom: 4.2rem;
 }
 .contact.row.col-12.fab:hover {
-  color: 1ebba3;
+  color: #1ebba3;
 }
 .card {
   outline-style: groove;
@@ -268,12 +283,15 @@ h3.heading {
 }
 #contact p {
   color: rgb(255, 255, 255);
+  font-size: 1rem;
 }
 #contact h2 {
   color: rgb(0, 0, 0);
+  font-size: 3rem;
 }
 #slides h1 {
   color: cyan;
+  
 }
 #slides h3 {
   color: rgb(2, 156, 156);
@@ -325,7 +343,7 @@ h3.heading {
   background-color: white;
   transition: 0.5s;
   transform: translate(0,0px);
-  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.7);
 }
 .social-menu ul li a:hover {
   transform: rotate(0deg) skew(0deg) translate(0, -10px);
@@ -396,8 +414,21 @@ h3.heading {
   text-align: center;
   margin: auto;
   overflow: hidden;
-  padding: 1.3rem 50% 1rem;
+  padding: 1.2rem 51.8% 1.2rem;
   background-color: #1f1e1e;
+}
+
+#card1 {
+  padding: 0.5rem;
+}
+#card2 {
+  padding: 0.5rem;
+}
+#card3 {
+  padding: 0.5rem;
+}
+#card4 {
+  padding: 0.5rem;
 }
 
 
