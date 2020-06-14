@@ -266,7 +266,7 @@ h3.heading {
 }
 .card {
   
-  border-radius: 18px;
+  border-radius: 12px;
   background: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
   box-shadow: 6px 6px 15px rgba(0,0,0,0.9);
   font-family: roboto;
@@ -279,13 +279,13 @@ h3.heading {
 }
 
 .card:hover {
-  transform: scale(1.05);
-  box-shadow: 5px 6px 15px rgba(0,0,0,0.6);
+  transform: scale(1.04);
+  box-shadow: 6px 6px 15px rgba(0,0,0,0.7);
 }
 .card {
   transition: 0.5s ease;
   cursor: pointer;
-  margin:30px;
+  margin: 5px;
 }
 
 #mainhead1 {
