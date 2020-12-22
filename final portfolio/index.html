@@ -3,23 +3,30 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Portfolio</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
+    <link href="style.css" rel="stylesheet" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+     
   </head>
   <body data-spy="scroll" data-target="#navbarResponsive">
-    <div id="home">
+    <div id="home" data-aos="fade-down">
 
    
-   
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#home"> MY PORTFOLIO </a>
@@ -34,13 +41,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#home">My Info</a>
+              <a class="nav-link" href="#myinfo">My Info</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#aboutme">About Me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#skillset">Skill Set</a>
@@ -54,7 +64,7 @@
       </div>
     </nav>
 
-    <div id="slides" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <div id="slides" class="carousel slide" data-ride="carousel" data-interval="4000">
       <ol class="carousel-indicators">
         <li data-target="#slides" data-slide-to="0" class="active"></li>
         <li data-target="#slides" data-slide-to="1"></li>
@@ -64,10 +74,10 @@
         <div class="carousel-item active" id="mainimg" style="background-image: url(a9122539bc17f0b49c3664cf0cf5e43a.jpg);">
           
           
-          <div class="carousal-caption text-center">
-            <h1>hey there!!</h1>
+          <div class="carousal-caption text-center" data-aos="fade-down">
+            <h1>hello</h1>
             <h3>welcome to my portfolio</h3>
-            <a class="btn btn-outline-light btn-lg" href="#aboutme">continue</a>
+            <a class="btn btn-outline-light btn-lg" href="#myinfo">continue</a>
           </div>
         </div>
         <div class="carousel-item">
@@ -80,13 +90,26 @@
       <br />
     </div>
     </div>
+
+
+    
+    <div id="myinfo" class="offset">
+    <div class="container-fluid padding abtme">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <hr class="lcolor6" />
+           <h1>My Info</h1>
+        </div>
+        <hr class="lcolor6" />
+      </div>
     
     <div class="container-fluid padding info">
       <div class="row padding">
+        
         <div class="col-lg-6">
           <h2 class="row text-center padding">
             NAME:
-            <h4 class="nm">Sayan samanta</h4>
+            <h4 class="nm">Sayan Samanta</h4>
           </h2>
           <br />
           <br />
@@ -97,25 +120,43 @@
             <li><h4>thats pretty much it hehe..</h4></li>
           </ul>
         </div>
-        <div class="col-lg-6 text-center">
-          <img class="myim" src="7316f550de9ca0045e3d8d98a5bb5e44.png" class="img-fluid" />
+        <div class="col-lg-6" id="x">
+          <img class="myim" src="x.jpg" class="img-fluid" />
         </div>
       </div>
+    </div>
     </div>
     <div id="aboutme" class="offset">
     <div class="container-fluid padding abtme">
       <div class="row welcome text-center">
         <div class="col-12">
-          <h1 class="display-4">About Me</h1>
+          <div class="wow">
+            <hr class="lcolor5" />
+            <h1>About Me</h1>
+          </div>
         </div>
-        <hr class="lcolor" />
+        <hr class="lcolor5" />
       </div>
     </div>
- 
+   
+     <section id="sec1">
+        <div class="hero">
+          <img src="bits.jpg" alt="">
+          <a href="https://www.bits-pilani.ac.in/"><h1 class="headline">BITS Goa</h1></a>
+          <div class="lol text-center">Hi, I am a Web Developer, currently pursuing my engineering in Birla Institute of Technology and Sciences Pilani - K.K. Birla Goa Campus. I love to code and to solve challenging problems. I also like to design websites. I am always keen to learn something new and work with new people. Contact me if you'd like to work together on your next project.</div>
+        </div>
+       </div>
+      </div>
+      
+     </section>
+
+    <div class="slider"></div>
+
+
     <div class="container-fluid padding abtme">
-      <div class="row padding"> 
+      <div class="row padding padding-top"> 
         <div class="col-md-4">
-          <div class="card">
+          <div class="card" id="card1">
             <img class="card-img-top" src="69695958-paints-and-brushes.jpg" />
             <div class="card-body">
               <h4 class="card-title">Painting</h4>
@@ -125,8 +166,10 @@
             </div>
           </div>
         </div>
+
         <div class="col-md-4">
-          <div class="card">
+          <div class="padding padding-top">
+          <div class="card" id="card2">
             <img class="card-img-top" src="download (1).jpg" />
             <div class="card-body">
               <h4 class="card-title">Cricket</h4>
@@ -134,31 +177,32 @@
                 I love cricket because it is purest form of love. The joy of watching your team do well, the uncertainties it brings and the sheer happiness. Sometimes you lose the unloseables and sometimes you manage to pull off a miracle. The game is such a leveler.
               </p>
             </div>
+            </div>
           </div>
         </div>
-       
         
-
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="Marvel-Movies-in-Order-of-Story-Featured-StudioBinder-min.jpg" />
-            <div class="card-body">
-              <h4 class="card-title">Movies</h4>
-              <p class="card-text row text-center">
-                For me, I love the feeling I can get after watching a movie. There is so much emotion that can be packed into a film, and I am rather young so it is just neat to see all these stories I have never had the experience to see. Movies are just a magical experience for me where I can escape to somewhere.
-              </p>
+          <div class="col-md-4">
+            <div class="padding-top">
+            <div class="card" id="card3">
+              <img class="card-img-top" src="Marvel-Movies-in-Order-of-Story-Featured-StudioBinder-min.jpg" />
+              <div class="card-body">
+                <h4 class="card-title">Movies</h4>
+                <p class="card-text row text-center">
+                  For me, I love the feeling I can get after watching a movie. There is so much emotion that can be packed into a film, and I am rather young so it is just neat to see all these stories I have never had the experience to see. Movies are just a magical experience for me where I can escape to somewhere.
+                </p>
+              </div>
             </div>
           </div>
         </div>
         
     <div class="container-fluid">
-      <div class="row padding"> 
+      <div class="row padding">
         <div class="col-12">
-          <div class="card">
+          <div class="card" id="card4">
             <img class="card-img-top" src="food-concept-meals-snacks-dining-table-family-royalty-free-image-963390242-1565986730.jpg" />
-            <div class="card-body row text-center">
+            <div class="card-body">
               <h4 class="card-title">Foodie</h4>
-              <p class="card-text">
+              <p class="card-text row text-center">
                 I love food and love eating it, who doesn’t? When I am enjoying a meal I am thinking about the next one. I don’t know why but one of my favorite things to do is eating.  I don’t know how to explain it but my world, revolves around food.
               </p>
             </div>
@@ -167,79 +211,181 @@
        </div>
     </div>
     </div>
-    <!--- projects-->
-    <div id="projects" class="offset">
-      <div class="jumbotron container-fluid padding">
-        <h3 class="heading text-center display-4">projects</h3>
-        <div class="heading-underline"></div>
-
-
-        <div class="col-lg-1">
-          <div class="row no-padding">
-            <div class="projects">
-              <a href="1_t7BQt0ULjU1XNUsBBl7Tdg.png" target="_blank">
-                <img src="1_t7BQt0ULjU1XNUsBBl7Tdg.png">
-              </a>
-            </div>
-          </div>
+  </div>
+    
+    
+<!-- Projects Section -->
+<section id="projects">
+  <div class="projects container">
+    <div class="projects-header">
+      <hr class="lcolor4">
+      <h1 class="section-title" id="sec-title">Recent <span>Projects</span></h1>
+      <hr class="lcolor4">
+    </div>
+    <div class="all-projects">
+      <div class="project-item">
+        <div class="project-info">
+          <h1>Project 1</h1>
+          <h2>Lorem, ipsum dolor</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
         </div>
-        <div class="col-lg-1">
-          <div class="row no-padding">
-            <div class="projects">
-              <a href="1_t7BQt0ULjU1XNUsBBl7Tdg.png" target="_blank">
-                <img src="1_t7BQt0ULjU1XNUsBBl7Tdg.png">
-              </a>
-            </div>
+        <div class="project-img">
+          <img src="download (1).jpg" alt="img">
         </div>
       </div>
-      <div class="col-lg-1">
-        <div class="row no-padding">
-          <div class="projects">
-            <a href="1_t7BQt0ULjU1XNUsBBl7Tdg.png" target="_blank">
-              <img src="1_t7BQt0ULjU1XNUsBBl7Tdg.png">
-            </a>
-          </div>
+      <div class="project-item">
+        <div class="project-info">
+          <h1>Project 2</h1>
+          <h2>Lorem, ipsum dolor</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+        </div>
+        <div class="project-img">
+          <img src="download (1).jpg" alt="img">
         </div>
       </div>
-      <div class="col-lg-1">
-        <div class="row no-padding">
-          <div class="projects">
-            <a href="1_t7BQt0ULjU1XNUsBBl7Tdg.png" target="_blank">
-              <img src="1_t7BQt0ULjU1XNUsBBl7Tdg.png">
-            </a>
-          </div>
+      <div class="project-item">
+        <div class="project-info">
+          <h1>Project 3</h1>
+          <h2>Lorem, ipsum dolor</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+        </div>
+        <div class="project-img">
+          <img src="download (1).jpg" alt="img">
         </div>
       </div>
-      <div class="col-lg-1">
-        <div class="row no-padding">
-          <div class="projects">
-            <a href="1_t7BQt0ULjU1XNUsBBl7Tdg.png" target="_blank">
-              <img src="1_t7BQt0ULjU1XNUsBBl7Tdg.png">
-            </a>
-          </div>
+      <div class="project-item">
+        <div class="project-info">
+          <h1>Project 4</h1>
+          <h2>Lorem, ipsum dolor</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+        </div>
+        <div class="project-img">
+          <img src="download (1).jpg" alt="img">
         </div>
       </div>
-      <div class="col-lg-1">
-        <div class="row no-padding">
-          <div class="projects">
-            <a href="1_t7BQt0ULjU1XNUsBBl7Tdg.png" target="_blank">
-              <img src="1_t7BQt0ULjU1XNUsBBl7Tdg.png">
-            </a>
-          </div>
+      <div class="project-item">
+        <div class="project-info">
+          <h1>Project 5</h1>
+          <h2>Lorem, ipsum dolor</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
         </div>
-      </div>
+        <div class="project-img" id="resize">
+          <img src="download (1).jpg" alt="img">
+        </div>
       </div>
     </div>
+  </div>
+</section>
+<!-- End Projects Section -->
+
+
+    <section class="services" id="services">
+      <div class="max-width">
+        <h2 class="title text-center">My Services</h2>
+        <div class="serv-content col-xs-12 col-md-12">
+          <div class="card">
+            <div class="box">
+              <i class="fas fa-paint-brush"></i>
+              <div class="text" >
+                Web Design
+              </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <i class="fas fa-user-secret"></i>
+              <div class="text">
+                Developer
+              </div>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <i class="fas fa-chart-line"></i>
+              <div class="text">
+                Advertisement
+              </div>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="skills" class="section skills">
+      <div class="container">
+        <div class="title">
+          <h1>My Skills</h1>
+        </div>
+        <div class="skills__center">
+          <div class="skills__left">
+            <div class="skills__box">
+              <h4>HTML</h4>
+              <div class="skills__ilt">
+                <div class="skills__bar html"></div>
+                <span>80%</span>
+              </div>
+            </div>
+            <div class="skills__box">
+              <h4>CSS</h4>
+              <div class="skills__ilt">
+                <div class="skills__bar css"></div>
+                <span>85%</span>
+              </div>
+            </div>
+            <div class="skills__box">
+              <h4>JavaScript</h4>
+              <div class="skills__ilt">
+                <div class="skills__bar javascript"></div>
+                <span>70%</span>
+              </div>
+            </div>
+            <div class="skills__box">
+              <h4>Nodejs</h4>
+              <div class="skills__ilt">
+                <div class="skills__bar nodejs"></div>
+                <span>60%</span>
+              </div>
+            </div>
+            <div class="skills__box">
+              <h4>Python</h4>
+              <div class="skills__ilt">
+                <div class="skills__bar python"></div>
+                <span>60%</span>
+              </div>
+            </div>
+            <div class="skills__box">
+              <h4>C Language</h4>
+              <div class="skills__ilt">
+                <div class="skills__bar c"></div>
+                <span>80%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
 
   <div id="skillset" class="offset">
     <div class="container-fluid padding">
       <div class="row welcome text-center">
         <div class="col-12">
-          <h1 class="display-4">Skillset</h1>
+          <hr class="lcolor3" />
+          <h1 class="display-4" id="skill">Skillset</h1>
+          <hr class="lcolor3" />
         </div>
         <hr />
       </div>
     </div>
+  </div>
     
     <div class="container-fluid padding">
       <div class="row text-center padding">
@@ -252,7 +398,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
           <i class="fas fa-bold"></i>
-          <h3>BOOTSTRAP</h3>
+          <h3>BOOTSTRAP4</h3>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
           <i class="fas fa-code"></i>
@@ -294,32 +440,41 @@
     <div class="container-fluid padding">
       <div class="row text-center padding">
         <div class="col-12">
-          <h2>Contact Details</h2>
+          <hr class="lcolor2" />
+          <h2 class="cont-title">Contact Details</h2>
+          <hr class="lcolor2" />
           <br />
         </div>
       </div>
       <div class="row text-center padding">
         <div class="col-12">
-          <p>Mobile:<a href="index.html"> 91-85xxxxxxxx</a></p>
+          <p>Mobile:<a href="index.html">91-85xxxxxxxx</a></p>
           <p>Email:<a href="index.html">sayansamanta@gmail.com</a></p>
           <p>Address:</p>
           <p>xxx-xxxx xxxxx xxxxxxxx</p>
           <p>xxxxxxx, xxxxx-xxx</p>
-          <a href="https://www.facebook.com/profile.php?id=100009428311948" target="_blank"><i class="fab fa-facebook-square"></i></a>
-          <a href="https://www.instagram.com/graphite_maniac" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.instagram.com/graphite_maniac" target="_blank"><i class="fab fa-twitter-square"></i></a>
         </div>
       </div>
     </div>
   </div>
-    <footer class="end">
-      <div class="container-fluid padding">
-        <div class="row text-center">
-          <div class="col-12">
-            <h5>&copy; indominousrexx.github.io</h5>
-          </div>
-        </div>
-      </div>
-    </footer>
+  <div class="social-menu">
+    <div class="container-fluid row text-center padding" id="social">
+      <ul>
+          <li><a href="https://www.facebook.com/profile.php?id=100009428311948"><i class="fab fa-facebook" id="facebook"></i></a></li>       
+          <li><a href="https://www.instagram.com/graphite_maniac"><i class="fab fa-twitter" id="twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/graphite_maniac"><i class="fab fa-instagram" id="instagram"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UC9gtrjG5hW4O1Vp9mrTWNzw?view_as=subscriber"><i class="fab fa-youtube" id="youtube"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 400,
+      duration: 1000
+    });
+  </script>
+
   </body>
 </html>
