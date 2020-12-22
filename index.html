@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Portfolio</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
@@ -21,7 +24,7 @@
      
   </head>
   <body data-spy="scroll" data-target="#navbarResponsive">
-    <div id="home">
+    <div id="home" data-aos="fade-down">
 
    
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -71,7 +74,7 @@
         <div class="carousel-item active" id="mainimg" style="background-image: url(a9122539bc17f0b49c3664cf0cf5e43a.jpg);">
           
           
-          <div class="carousal-caption text-center">
+          <div class="carousal-caption text-center" data-aos="fade-down">
             <h1>hello</h1>
             <h3>welcome to my portfolio</h3>
             <a class="btn btn-outline-light btn-lg" href="#myinfo">continue</a>
@@ -226,7 +229,7 @@
           <h2>Lorem, ipsum dolor</h2>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
         </div>
-        <div class="project-img" id="resize">
+        <div class="project-img">
           <img src="download (1).jpg" alt="img">
         </div>
       </div>
@@ -236,7 +239,7 @@
           <h2>Lorem, ipsum dolor</h2>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
         </div>
-        <div class="project-img" id="resize">
+        <div class="project-img">
           <img src="download (1).jpg" alt="img">
         </div>
       </div>
@@ -246,7 +249,7 @@
           <h2>Lorem, ipsum dolor</h2>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
         </div>
-        <div class="project-img" id="resize">
+        <div class="project-img">
           <img src="download (1).jpg" alt="img">
         </div>
       </div>
@@ -256,7 +259,7 @@
           <h2>Lorem, ipsum dolor</h2>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
         </div>
-        <div class="project-img" id="resize">
+        <div class="project-img">
           <img src="download (1).jpg" alt="img">
         </div>
       </div>
@@ -276,9 +279,6 @@
 <!-- End Projects Section -->
 
 
-
-
-
     <section class="services" id="services">
       <div class="max-width">
         <h2 class="title text-center">My Services</h2>
@@ -286,10 +286,10 @@
           <div class="card">
             <div class="box">
               <i class="fas fa-paint-brush"></i>
-              <div class="text">
+              <div class="text" >
                 Web Design
               </div>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
             </div>
           </div>
           <div class="card">
@@ -313,6 +313,63 @@
         </div>
       </div>
     </section>
+
+
+    <section id="skills" class="section skills">
+      <div class="container">
+        <div class="title">
+          <h1>My Skills</h1>
+        </div>
+        <div class="skills__center">
+          <div class="skills__left">
+            <div class="skills__box">
+              <h4>HTML</h4>
+              <div class="skills__ilt">
+                <div class="skills__bar html"></div>
+                <span>80%</span>
+              </div>
+            </div>
+            <div class="skills__box">
+              <h4>CSS</h4>
+              <div class="skills__ilt">
+                <div class="skills__bar css"></div>
+                <span>85%</span>
+              </div>
+            </div>
+            <div class="skills__box">
+              <h4>JavaScript</h4>
+              <div class="skills__ilt">
+                <div class="skills__bar javascript"></div>
+                <span>70%</span>
+              </div>
+            </div>
+            <div class="skills__box">
+              <h4>Nodejs</h4>
+              <div class="skills__ilt">
+                <div class="skills__bar nodejs"></div>
+                <span>60%</span>
+              </div>
+            </div>
+            <div class="skills__box">
+              <h4>Python</h4>
+              <div class="skills__ilt">
+                <div class="skills__bar python"></div>
+                <span>60%</span>
+              </div>
+            </div>
+            <div class="skills__box">
+              <h4>C Language</h4>
+              <div class="skills__ilt">
+                <div class="skills__bar c"></div>
+                <span>80%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
 
 
 
@@ -384,7 +441,7 @@
       <div class="row text-center padding">
         <div class="col-12">
           <hr class="lcolor2" />
-          <h2>Contact Details</h2>
+          <h2 class="cont-title">Contact Details</h2>
           <hr class="lcolor2" />
           <br />
         </div>
@@ -410,6 +467,14 @@
       </ul>
     </div>
   </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 400,
+      duration: 1000
+    });
+  </script>
 
   </body>
 </html>
