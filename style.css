@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
 
 :root {
-  --default: #ff3c00;
+  --default: #ff2600;
   --grey: #8492a6;
   --backgroundColor: rgb(221, 221, 221);
   --white: #fff;
@@ -177,9 +177,9 @@ html, body {
    outline-style: solid;
    outline-color: rgb(0, 0, 0);
    outline-width: 0.2rem;
-   margin-left: 3.5rem;
+   margin-left: 3rem;
    margin-top: 1rem;
-   margin-bottom: -2rem;
+   margin-bottom: -1rem;
   }
   
 }
